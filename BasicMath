@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BasicMath
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Write a C# Sharp program to print output of adding,
+            subtracting, multiplying and dividing of two numbers which will be 
+            entered by the user.*/
+
+            Console.WriteLine("Input first number: ");
+            int first = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Input second number: ");
+            int second = Convert.ToInt32(Console.ReadLine());
+
+            int sum = first + second;
+            int difference = first - second;
+            int product = first * second;
+            double quotient = first / second;
+
+            Console.WriteLine("Sum: " + sum);
+            Console.WriteLine("Difference: " + difference);
+            Console.WriteLine("Product: " + product);
+            Console.WriteLine("Quotient: " + quotient);
+        }
+    }
+}
