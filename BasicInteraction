@@ -26,6 +26,8 @@ namespace BasicMath
             {
                 Console.WriteLine("Ah, your number's big enough.");
             }
+            
+            Console.ReadLine();
         }
     }
     }
