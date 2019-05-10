@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BasicMath
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Create a program that creates an 
+             * array of five hard-coded floating
+             * - point values, then prints out 
+             * just the second value. */
+
+            double[] arr = new double[5] {2.3, 5.44, 6.86, 8.08, 9.099};
+
+            Console.WriteLine(arr[1]);
+            Console.ReadLine();
+        }
+    }
+    }
+ 
