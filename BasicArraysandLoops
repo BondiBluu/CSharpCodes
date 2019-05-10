@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BasicMath
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Modify the array so that it uses a foreach 
+             * loop to display all the values in the array, 
+             * all on one line, each number formatted to 
+             * two decimal places.  */
+
+            double[] arr = new double[5] {2.3, 5.44, 6.86, 8.08, 9.099};
+
+
+            foreach(double num in arr)
+            {
+                Console.Write("{0} ", num.ToString("N2"));
+            }
+
+            Console.WriteLine();
+            Console.ReadLine();
+        }
+    }
+    }
