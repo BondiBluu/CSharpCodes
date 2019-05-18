@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BasicMath
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Create an application that uses two nested for loops to loop through the 2D array defined above and print the values. */
+
+            string[,] arr ={ { "one", "two", "three" }, { "apple", "orange", "banana" } };
+
+            for(int i=0; i<3; i++)
+            {
+                for (int col = 0; col<3; col++)
+                {
+                    //the \t makes us use a tab so the text looks nice and separated
+                    Console.Write("{0}\t", arr[i, col]);
+                }
+                Console.WriteLine();
+            
+            }
+            Console.ReadLine();
+
+        }
+    }
+    }
+ 
+   
+
