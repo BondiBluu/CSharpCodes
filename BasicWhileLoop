@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*Write an application that asks the user to enter the number '5' 
+ 
+and loops over and over until '5' is entered. 
+
+When 5 is finally entered, print "Got it!". 
+
+Use a while loop! 
+
+*/
+
+namespace BasicMath
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 0;
+
+            //if this wasn't here, it'd take any number and say got it
+            while (num != 5)
+            {
+                Console.WriteLine("Enter the number 5: ");
+                string line = Console.ReadLine(); //num is aready a value so we can't convert. We'll have to read in the string and parse it back to a number
+
+                Int32.TryParse(line, out num);
+            }
+
+            Console.WriteLine("Got it!");
+
+           
+           
+        }
+    }
+    }
