@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MilesPerGallonProgram
+{
+    //A motorist wants to determin her gas mileage. at 23,340 miles the tank is filled. At 23,695 the tank is filled with 14.1 gallons. How many miles
+    //per gallon did the car average between two fillings?
+    class Program
+    {
+        class Milage
+        {
+            int miles1, miles2;
+            double gas, mpg;
+            public Milage( int m1, int m2, double g) //plugging in the values to format them below
+            {
+                miles1 = m1;
+                miles2 = m2;
+                gas = g;
+            }
+            public void average()
+            {
+                mpg = (miles2 - miles1) / gas;
+                Console.WriteLine("First set of miles: "+ miles1);
+                Console.WriteLine("Second set of miles: "+ miles2);
+                Console.WriteLine("Gallons of gas filled: "+gas);
+                Console.WriteLine("Average miles per gallon between the two inputted fillings: "+ mpg);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Milage milage = new Milage(23340, 23695, 14.1);
+            milage.average();
+        }
+    }
+}
