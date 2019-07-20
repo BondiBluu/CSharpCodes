@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//write a program rto compute and print the month end balance
+namespace MonthEndBalanceCSharp
+{
+    class Program
+    {
+        public class Data
+        {
+            string lastName;
+            double previousBalance, payment, charges, newBalance, financeCharge, monthEndBalance;
+            public Data(string last, double prev, double pay, double charge)
+            {
+                lastName = last;
+                previousBalance = prev;
+                payment = pay;
+                charges = charge;
+            }
+
+            public void balance()
+            {
+                newBalance = previousBalance + charges;
+                financeCharge = newBalance * .12;
+                monthEndBalance = newBalance + financeCharge;
+                Console.WriteLine("Name: {0}, Previous Balance: {1}, Payments: {2}, Charges: {3}, New Balance: {4}, Finance Charge: {5}, Month End Balance: {6}", lastName, previousBalance,
+                    payment, charges, newBalance, financeCharge, monthEndBalance);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Data data = new Data("Allen", 500.00, 0.00, 200.00);
+            data.balance();
+        }
+    }
+}
